@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm i`
+
+Installs all the required dependencies .\
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -27,20 +31,23 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## About the Task
 
-### `npm run eject`
+Review -> 20 minuets
+Design -> 30 minuets
+Implementation -> 2 Hours
+Testing -> 14 Minuets
+Documentation -> 10 minuets
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I used several packages in this application./
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### styled-components
+Because it's easy to just created the components that are already styled ans it's very easy to create dynamic styles ./
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### State Management (zustand)
+A very easy to use state management library that also provides data persistence./
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### React Query.
+React-Query will initially return the previously fetched data and then re-fetch. 
+```const { isLoading, isFetching, error, data, status } = useQuery(); ```
+This makes our code a lot simpler and easy to maintain
