@@ -3,6 +3,10 @@ import {
   QueryClientProvider
 } from '@tanstack/react-query'
 
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+
+import router from '../routes'
+
 import { render } from "@testing-library/react"
 import { useUsersQuery } from "../hooks/useUsersQuery"
 import HomePage from './HomePage'
@@ -18,8 +22,10 @@ const queryClient = new QueryClient({
   },
 })
 
-const wrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+const wrapper = () => (
+  <QueryClientProvider client={queryClient}>
+    <RouterProvider router={createBrowserRouter(router)} fallbackElement={<>Loading on navigate</>} />
+  </QueryClientProvider>
 )
 
 export default wrapper
