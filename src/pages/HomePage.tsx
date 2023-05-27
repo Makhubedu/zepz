@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BrowserRouter as Router } from 'react-router-dom'
 
 import UserCard from '../components/UserCard'
 import { useAppStore } from '../store'
@@ -21,11 +20,9 @@ const HomePage = () => {
     }
 
     return (
-        <Router>
-            <CardsContainer>
-                {userList.map(user => <UserCard key={user.account_id} user={user} />)}
-            </CardsContainer>
-        </Router>
+        <CardsContainer>
+            {userList.map(user => <UserCard key={user.account_id} user={user} />)}
+        </CardsContainer>
     )
 }
 
