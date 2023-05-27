@@ -33,21 +33,21 @@ Your app is ready to be deployed!
 
 ## About the Task
 
-Review -> 20 minuets
-Design -> 30 minuets
-Implementation -> 2 Hours
-Testing -> 14 Minuets
-Documentation -> 10 minuets
+Review -> 20 minuets.\
+Design -> 30 minuets.\
+Implementation -> 2 Hours.\
+Testing -> 14 Minuets.\
+Documentation -> 10 minuets.\
 
-I used several packages in this application./
+I used several packages in this application.\
 
 #### styled-components
-Because it's easy to just created the components that are already styled ans it's very easy to create dynamic styles ./
+Because it's easy to just created the components that are already styled ans it's very easy to create dynamic styles .\
 
 ### State Management (zustand)
-A very easy to use state management library that also provides data persistence./
+A very easy to use state management library that also provides data persistence.\
 
 ### React Query.
-React-Query will initially return the previously fetched data and then re-fetch. 
-```const { isLoading, isFetching, error, data, status } = useQuery(); ```
-This makes our code a lot simpler and easy to maintain
+React-Query will initially return the previously fetched data and then re-fetch.\
+```const { isLoading, isFetching, error, data, status } = useQuery(); ```.\
+This makes our code a lot simpler and easy to maintain.\
